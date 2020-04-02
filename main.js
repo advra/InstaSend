@@ -7,6 +7,9 @@ let isQuittingApp = false;
 function createWindow () {
 
   const options = {
+    resizable: false,
+    fullscreen: false,
+    maximizable: false,
     titleBarStyle: 'hiddenInset',
     title: 'InstaSend',
     webPreferences: {
