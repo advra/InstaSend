@@ -1,17 +1,22 @@
 const { app, BrowserWindow } = require('electron')
 
-function createWindow () {
-  // Create the browser window.
-  let win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true
-    }
-  })
+const DOMAIN_URL = "instagram.com"
+let mainWindow;
+let isQuittingApp = false;
 
-  // and load the index.html of the app.
-  win.loadFile('index.html')
+function createWindow () {
+
+  const options = {
+    titleBarStyle: 'hiddenInset',
+    title: 'InstaSend',
+    webPreferences: {
+			nodeIntegration: false
+		},
+  };
+
+  // create window with settings
+  mainWindow = new BrowserWindow(options)
+  mainWindow.loadURL('https://instagram.com')
 }
 
 app.whenReady().then(createWindow)
