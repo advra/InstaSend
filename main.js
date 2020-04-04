@@ -3,16 +3,17 @@ const path = require('path');
 const fs = require('fs');
 
 
-const DOMAIN_URL = "instagram.com"
-let mainWindow;
-let isQuittingApp = false;
+let win;
+let loginForm;
 
 function createWindow () {
 
   const options = {
-    resizable: false,
-    fullscreen: false,
-    maximizable: false,
+    width: 500,
+    height: 550,
+    resizable: true,
+    maximizable: true,
+    movable: true,
     titleBarStyle: 'hiddenInset',
     title: 'InstaSend',
     webPreferences: {
@@ -24,11 +25,32 @@ function createWindow () {
   mainWindow = new BrowserWindow(options)
   mainWindow.loadURL('https://instagram.com')
 
-  // apply css
-  mainWindow.webContents.on('dom-ready', () => {
-		mainWindow.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
-	});
+  win.webContents.on('dom-ready', function (e) {
+    win.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
+  })
 
+  // check if we are at the login page //dom-ready
+  // win.webContents.on('dom-ready', function (e) {
+  //   win.webContents.executeJavaScript(`
+  //     var ipcRenderer = require('electron').ipcRenderer;
+  //     var hasLogin = document.getElementsByClassName("gr27e")[0];
+  //     ipcRenderer.send('checkLogin', hasLogin);
+  //     console.log("Send checklogin");
+  //   `);
+	// });
+  //
+  // ipcMain.on('checkLogin', function(event, hasLogin){
+  //   console.log("Recv checklogin");
+  //   if(!hasLogin){
+  //     win.resizable = true
+  //     win.maximizable = true
+  //     win.setSize(1100,950, true)
+  //     win.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/dash.css'), 'utf8'));
+  //   }else{
+  //     win.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
+  //   }
+  //
+  // })
 }
 
 app.whenReady().then(createWindow)
