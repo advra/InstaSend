@@ -1,3 +1,7 @@
+.body{
+  -webkit-app-region:drag;
+}
+
 /* Login - Get Apps Section */
 .APQi1{
   display: none;

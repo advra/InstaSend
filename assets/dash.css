@@ -1,6 +1,7 @@
-/* body{
-  transform: rotate(-90deg);
-} */
+body{
+  /* transform: rotate(-90deg); */
+  -webkit-app-region:drag;
+}
 
 .Igw0E.rBNOH.YBx95._4EzTm HVWg4 {
    display: none
