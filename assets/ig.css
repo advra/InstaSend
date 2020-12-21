@@ -1,7 +1,22 @@
+/* remove drag from interactables */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button,
+textarea {
+	-webkit-app-region: no-drag !important;
+}
+
 /* Login - Get Apps Section */
 .APQi1{
   display: none;
 }
+
+/* Login Body */
+/* .SCxLW{
+  -webkit-app-region: drag;
+} */
 
 /* Login - Footer Section */
 ._8Rna9{
@@ -53,11 +68,13 @@
 
 /* right side bar content (suggestions etc) */
 .COOzN{
+  -webkit-app-region: no-drag;
   display: none;
 }
 
 /* main content */
 .cGcGK{
+  -webkit-app-region: no-drag;
   margin: auto !important;
   float: none !important;
   max-width: none !important;
@@ -65,5 +82,10 @@
 
 /* home icon */
 ._8-yf5 {
+  -webkit-app-region: no-drag;
+}
+
+/* user icon */
+._2dbep{
   -webkit-app-region: no-drag;
 }
