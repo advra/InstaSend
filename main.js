@@ -25,8 +25,8 @@ function createWindow () {
   mainWindow = new BrowserWindow(options)
   mainWindow.loadURL('https://instagram.com')
 
-  win.webContents.on('dom-ready', function (e) {
-    win.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
+  mainWindow.webContents.on('dom-ready', function (e) {
+    mainWindow.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
   })
 
   // check if we are at the login page //dom-ready
@@ -53,4 +53,4 @@ function createWindow () {
   // })
 }
 
-app.whenReady().then(createWindow)
+app.on('ready', createWindow);
