@@ -3,7 +3,6 @@ const path = require('path');
 const fs = require('fs');
 const windowStateKeeper = require('electron-window-state');
 
-let win;
 let mainWindow;
 var hasLoginForm = false;
 let willQuitApp = false;
@@ -41,7 +40,7 @@ function createWindow () {
   mainWindow.loadURL('https://instagram.com')
 
   
-  mainWindow.webContents.once('dom-ready', ()=> {
+  mainWindow.webContents.on('did-finish-load', ()=> {
     mainWindow.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));
   });
   
