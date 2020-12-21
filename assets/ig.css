@@ -47,10 +47,23 @@
 
 /* Logo */
 .s4Iyt{
+  float: left;
   -webkit-app-region: no-drag;
 }
 
+/* right side bar content (suggestions etc) */
+.COOzN{
+  display: none;
+}
+
+/* main content */
+.cGcGK{
+  margin: auto !important;
+  float: none !important;
+  max-width: none !important;
+}
+
 /* home icon */
-/* ._8-yf5 {
+._8-yf5 {
   -webkit-app-region: no-drag;
-} */
+}
