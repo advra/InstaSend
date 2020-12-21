@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path');
 const fs = require('fs');
+// const windowStateKeeper = require('electron-window-state')
 
 let win;
 let loginForm;
@@ -23,33 +24,6 @@ function createWindow () {
   // create window with settings
   mainWindow = new BrowserWindow(options)
   mainWindow.loadURL('https://instagram.com')
-
-  // handle close
-  // mainWindow.on('close', e => {
-  //   if(willQuitApp){
-  //     mainWindow = null;
-  //     return;
-  //   }
-  //   // check if user only tried to close window
-  //   e.preventDefault();
-  //   if(!mainWindow){
-  //     return;
-  //   }
-  //
-  //   if(!mainWindow.isFullScreen()){
-  //     mainWindow.hide();
-  //     return;
-  //   }
-  //
-  //   mainWindow.setFullScreen(false);
-  //   // wait fullscreen animation before hiding
-  //   setTimeout(
-  //     () => {
-  //       mainWindow.hide();
-  //     },
-  //     1000
-  //   );
-  // });
 
   mainWindow.webContents.on('dom-ready', function (e) {
     mainWindow.webContents.insertCSS(fs.readFileSync(path.join(__dirname, '/assets/ig.css'), 'utf8'));

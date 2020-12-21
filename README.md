@@ -1,11 +1,28 @@
+# InstaSend
 
-dev:
+InstaSend is a macOS and windows client for Instagram. Instagram revoked API access terminating many well known clients years ago. This is a single-site browser application that injects some CSS and JS to provide a better user experience on desktop devices.
+
+## Feature Request
+I am open to requests and recommendations. Feel free to discuss or open issues. Not all features will be implemented as the single goal is to make this lightweight.
+
+## Build and Debug
 ```
 npm install
-npm start run
+npm run start
 ```
 
-todo:
-[x] applied css for better user experience
-[ ] update window state upon login and expand
-[ ] allow color option modes
+## Deployment
+The app can easily be built for windows or mac running the following command (assuming you already ran `npm install`)
+```
+sudo npm run dist
+```
+
+## Todo
+```
+[x] - inject css for better UX
+[ ] - fix ipc for login and dashboard
+[ ] - add windowStateKeeper
+[ ] - app closing and recovert
+[ ] - notifications
+[ ] - night-mode
+```

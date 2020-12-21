@@ -1,10 +1,11 @@
 {
   "name": "instamessenger",
-  "version": "1.0.0",
+  "version": "0.4.0",
   "description": "A web-powered instagram messenger application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "repository": "",
   "keywords": [
@@ -16,6 +17,23 @@
   "author": "Adrian D. Alonzo",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^8.2.0"
+    "electron": "^8.2.0",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "productName": "InstaSend",
+    "icon": "build/AppIcon.ico",
+    "appId": "com.advra.instasend",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
   }
 }
