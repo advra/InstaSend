@@ -4,6 +4,9 @@ InstaSend is a macOS and windows client for Instagram. Instagram revoked API acc
 
 Note: Some overhaul with the menu will need to be to make Windows version more usable.
 
+## Download
+Download the DMG file in [Release](https://github.com/advra/InstaSend/releases) to get the latest version.
+
 ## Feature Request
 I am open to requests and recommendations. Feel free to discuss or open issues. Not all features will be implemented as the single goal is to make this lightweight.
 
