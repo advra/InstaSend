@@ -1,6 +1,6 @@
 {
   "name": "instasend",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A web-powered instagram optimized for desktop experience",
   "main": "main.js",
   "scripts": {
@@ -18,8 +18,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^8.2.0",
-    "electron-builder": "^21.2.0",
-    "electron-window-state": "^5.0.3"
+    "electron-builder": "^21.2.0"
   },
   "build": {
     "productName": "InstaSend",
@@ -36,5 +35,8 @@
         "portable"
       ]
     }
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
   }
 }

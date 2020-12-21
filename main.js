@@ -36,7 +36,7 @@ function createWindow () {
   // create window with settings
   mainWindow = new BrowserWindow(options);
   mainWindowState.manage(mainWindow);
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
   mainWindow.loadURL('https://instagram.com')
 
   
