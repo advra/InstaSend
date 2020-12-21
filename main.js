@@ -14,7 +14,8 @@ function createWindow () {
     // resizable: true,
     // maximizable: true,
     // movable: true,
-    titleBarStyle: 'hiddenInset',
+    frame: false,
+    titleBarStyle: 'hidden',
     title: 'InstaSend',
     webPreferences: {
 			nodeIntegration: false
