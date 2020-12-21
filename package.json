@@ -2,7 +2,7 @@
   "name": "instasend",
   "version": "0.4.1",
   "description": "A web-powered instagram optimized for desktop experience",
-  "main": "main.js",
+  "main": "app/main.js",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
