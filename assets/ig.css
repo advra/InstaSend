@@ -12,3 +12,45 @@
 .yOZjD{
   display: none; !important
 }
+
+/* dashboard-toolbar */
+.MWDvN{
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+/* dashboard-icons buttons
+  Disable drag otherwise clicking results in window dragging
+*/
+
+/* Search bar: disable dragging to make text selectable*/
+.LWmhU{
+  -webkit-user-select: text;
+  -webkit-app-region: no-drag;
+}
+
+/* search bar pop up */
+.drKGC{
+  margin-top: 30px;
+}
+
+/* navigation bar (icons) */
+.MWDvN{
+  margin-top: 15px;
+}
+
+/* nav bar (background) */
+._lz6s{
+  height: 70px !important;
+  -webkit-app-region: drag;
+}
+
+/* Logo */
+.s4Iyt{
+  -webkit-app-region: no-drag;
+}
+
+/* home icon */
+/* ._8-yf5 {
+  -webkit-app-region: no-drag;
+} */
