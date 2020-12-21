@@ -4,8 +4,10 @@ InstaSend is a macOS and windows client for Instagram. Instagram revoked API acc
 
 Note: Some overhaul with the menu will need to be to make Windows version more usable.
 
+![preview image](preview.gif)
+
 ## Download
-Download the DMG file in [Release](https://github.com/advra/InstaSend/releases) to get the latest version.
+Grab the latest version in [Releases](https://github.com/advra/InstaSend/releases).
 
 ## Feature Request
 I am open to requests and recommendations. Feel free to discuss or open issues. Not all features will be implemented as the single goal is to make this lightweight.
@@ -25,10 +27,10 @@ sudo npm run dist
 ## Todo
 ```
 [x] - inject css for better UX
-[ ] - add custom traffic light to use with OSX and Windows
-[ ] - fix ipc for login and dashboard
 [x] - add windowStateKeeper
 [x] - app closing and recovery
+[ ] - add custom traffic light to use with OSX and Windows
+[ ] - fix ipc for login and dashboard
 [ ] - notifications
 [ ] - night-mode
 ```
