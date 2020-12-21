@@ -24,8 +24,8 @@ sudo npm run dist
 [x] - inject css for better UX
 [ ] - add custom traffic light to use with OSX and Windows
 [ ] - fix ipc for login and dashboard
-[ ] - add windowStateKeeper
-[ ] - app closing and recovert
+[x] - add windowStateKeeper
+[x] - app closing and recovery
 [ ] - notifications
 [ ] - night-mode
 ```
