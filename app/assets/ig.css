@@ -8,9 +8,16 @@ textarea {
 	-webkit-app-region: no-drag !important;
 }
 
+/* corrects webview double scroll*/
+html{
+overflow-y: hidden;
+overflow-x: hidden;
+}
+/* corrects webview inner scroll crop*/
 body {
-    width: 100vw;
-    height: 100vh;
+  float:right;
+  width: 99vw;
+  height: 93vh;
 }
 
 /* Login - Get Apps Section */
