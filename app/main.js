@@ -15,6 +15,7 @@ function createWindow () {
 	});
 
   const options = {
+	center: true,
     minWidth: 500,
     minHeight: 600,
     x: mainWindowState.x,
@@ -29,15 +30,18 @@ function createWindow () {
     titleBarStyle: 'hidden',
     title: 'InstaSend',
     webPreferences: {
-      nodeIntegration: false
+	  nodeIntegration: true,
+	  webviewTag: true
 		},
   };
   
   // create window with settings
   mainWindow = new BrowserWindow(options);
+  mainWindow.center();
   mainWindowState.manage(mainWindow);
-  // mainWindow.webContents.openDevTools();
-  mainWindow.loadURL('https://instagram.com')
+  mainWindow.webContents.openDevTools();
+//   mainWindow.loadURL('https://instagram.com')
+  mainWindow.loadFile('app/index.html');
 
   
   mainWindow.webContents.on('did-finish-load', ()=> {

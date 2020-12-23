@@ -32,3 +32,6 @@ sudo npm run dist
 [ ] - notifications
 [ ] - night-mode
 ```
+
+
+Src: https://gist.github.com/deadcoder0904/8d7be724fcfb1e0fcedbacdc3387bc8b
