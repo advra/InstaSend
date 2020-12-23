@@ -4,7 +4,7 @@
 
 document.body.innerHTML = `
     <H1>This is a placeholder</h1>
-    <webview src="https://instagram.com" preload="file://${__dirname}/ig-preload.js"></webview>
+    <webview src="https://www.instagram.com/" style="width:100%; height:100%"></webview>
 
 `
 
@@ -12,4 +12,3 @@ const webview = document.querySelector("webview");
 webview.addEventListener("dom-ready", () => {
 //   webview.openDevTools();
 });
-webview.setAutoResize({width: true, height: true})

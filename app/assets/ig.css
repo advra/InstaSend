@@ -8,6 +8,11 @@ textarea {
 	-webkit-app-region: no-drag !important;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 /* Login - Get Apps Section */
 .APQi1{
   display: none;
