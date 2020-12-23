@@ -1,1 +1,2 @@
-console.log(`Logging from preload`)
+console.log(`Loading ig css...`)
+
