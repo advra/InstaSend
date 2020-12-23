@@ -17,7 +17,7 @@ overflow-x: hidden;
 body {
   float:right;
   width: 99vw;
-  height: 93vh;
+  height: 98vh;
 }
 
 /* Login - Get Apps Section */
@@ -37,7 +37,7 @@ body {
 
 /* Login - Left App Image Preview */
 .yOZjD{
-  display: none; !important
+  display: none !important;
 }
 
 /* dashboard-toolbar */
@@ -69,8 +69,8 @@ body {
 /* nav bar (background) */
 ._lz6s{
   height: 70px !important;
-  margin-left: 2px;
-  margin-top: 2px;
+  /* margin-left: 2px;
+  margin-top: 2px; */
   -webkit-app-region: drag;
 }
 

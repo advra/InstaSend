@@ -1,21 +1,12 @@
-<!-- <head>
-    <style>
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
-</head>
-
-<body>
-    Hi!
-    <webview id="foo" src="https://www.electron.com/" style="display:inline-flex; width:640px; height:480px"></webview>
-</body> -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Error!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="title">InstaSend</title>
+    <link rel="stylesheet" type="text/css" href="res/css/menu.css">
     <link rel="stylesheet" type="text/css" href="assets/ig.css">
   </head>
   <body>
@@ -24,11 +15,12 @@
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
-
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-      
-    </script>
   </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+  <script src="res/js/aligner.js"></script>
+  <script src="res/js/menuHandler.js"></script>
+  <script src="res/js/init.js"></script>
 </html>
