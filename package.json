@@ -25,14 +25,30 @@
     "icon": "build/AppIcon.ico",
     "appId": "com.advra.instasend",
     "mac": {
-      "target": [
-        "dmg",
-        "zip"
-      ]
+      "target": ["dmg","zip"],
+      "artifactName": "${productName}-${version}-${os}.${ext}"
     },
     "win": {
-      "target": [
-        "portable"
+      "target": ["nsis", "zip", "portable"],
+      "artifactName": "${productName}-${version}-${os}.${ext}"
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "artifactName": "${productName}-${version}-${os}.${ext}"
+    },
+    "dmg": {
+      "title": "${productName}-${version}",
+      "contents": [
+        {
+          "x": 300,
+          "y": 360
+        },
+        {
+          "x": 490,
+          "y": 360,
+          "type": "link",
+          "path": "/Applications"
+        }
       ]
     }
   },
