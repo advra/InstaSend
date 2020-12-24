@@ -27,7 +27,7 @@ sudo npm run dist
 [x] - inject css for better UX
 [x] - add windowStateKeeper
 [x] - app closing and recovery
-[ ] - add custom toolbar for minimize, maximize, close buttons (required to be windows and Linux friendly!)
+[x] - add custom toolbar for minimize, maximize, close buttons (for cross-compaibility). Done but not yet merged to master.
 [ ] - fix ipc for login and dashboard
 [ ] - notifications
 [ ] - night-mode
